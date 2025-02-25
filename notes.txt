@@ -1,0 +1,24 @@
+NVM: Node Version Manager
+LTS: Long Term Support, (suporte mais extendido para essa versão)
+rc: run commands (convensão de scripts de inicialização)
+npm: gerenciador de pacote
+next: gerenciar o back-end e front-end
+react: irá construir tudo
+
+nvm ls
+nvm install lts/hydrogen
+nvm install (o arquivo .nvmrc irá completar)
+node -v
+nvm --help
+nvm alias default lts/hydrogen // garante que a versão não mude
+
+npm init
+npm install next@13.1.6
+npm install react@18.2.0
+npm install react-dom@18.2.0
+
+1. Ao informar este comando, o sistema irá procurar no arquivo package.json a chave scripts e o valor dev, e assim executar o comando
+npm run dev
+
+2. limpa o terminal
+ctrl + l
