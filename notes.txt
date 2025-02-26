@@ -22,3 +22,4 @@ npm run dev
 
 2. limpa o terminal
 ctrl + l
+npm install prettier -D // padronizar a estilização do código + devDependencies (-D) no JSON
