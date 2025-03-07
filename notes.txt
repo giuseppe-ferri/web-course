@@ -25,3 +25,4 @@ ctrl + l
 npm install prettier -D // padronizar a estilização do código + devDependencies (-D) no JSON
 
 npm install --save-dev jest@29.6.2
+npm run test:watch
