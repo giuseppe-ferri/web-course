@@ -26,3 +26,5 @@ npm install prettier -D // padronizar a estilização do código + devDependenci
 
 npm install --save-dev jest@29.6.2
 npm run + scripts do json
+
+usar no navegador: JSON Viewer Pro
