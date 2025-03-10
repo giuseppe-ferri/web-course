@@ -29,12 +29,12 @@ npm run + scripts do json
 
 usar no navegador: JSON Viewer Pro
 
-1. Ao ligar o servidor: npm run dev, abrir nova janela do bash e digitar: curl http://localhost:3000/api/status -v, sera apresentado o protocolo http
+A. Ao ligar o servidor: npm run dev, abrir nova janela do bash e digitar: curl http://localhost:3000/api/status -v, sera apresentado o protocolo http
 
 nslookup web-course-iota.vercel.app
 curl https://64.29.17.193 --insecure -verbose
 
-1. Um servidor que hospeda diversos sites irá retornar o site que esta no Header Host, que por padrão é o endereço IP, deverá ser alterado pelo dominio
+B. Um servidor que hospeda diversos sites irá retornar o site que esta no Header Host, que por padrão é o endereço IP, deverá ser alterado pelo dominio
 curl https://64.29.17.193 --insecure -verbose --header 'Host: https://web-course-iota.vercel.app/'
 
 docker-compose -v
@@ -44,10 +44,17 @@ docker ps -a
 docker compose up -d ou --detach (rodar em background e usar o terminal)
 sudo apt update (atualizar a lista dos gerenciadores de pacotes)
 sudo apt install postgresql-client (instalar)
+
+1. Primeira vez
 docker compose up -d --force-recreate (receriar docker para realizar a conexao)
 psql --host=localhost --username=postgresql --port=5432 (realiza a conexao)
 \q
 docker compose down
+
+2. Substituir o user, database, senha...
+docker compose down OU docker compose -f infra/compose.yaml down (derrubar o docker)
+docker compose up -d OU docker compose -f infra/compose.yaml up -d (sbir o docker)
+npm run dev
 
 docker compose -f infra/compose.yaml up (rodar servidor)
 
