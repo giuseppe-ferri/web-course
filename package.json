@@ -4,7 +4,11 @@
   "description": "Curso web",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "services:up": "docker compose -f infra/compose.yaml up --detach",
+    "services:stop": "docker compose -f infra/compose.yaml stop",
+    "services:start": "docker compose -f infra/compose.yaml start",
+    "services:down": "docker compose -f infra/compose.yaml down",
+    "dev": "npm run services:up && next dev",
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --write .",
     "test": "jest",
