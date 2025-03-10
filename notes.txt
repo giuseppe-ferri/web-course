@@ -61,3 +61,5 @@ docker compose -f infra/compose.yaml up (rodar servidor)
 npm install pg@8.11.3
 
 docker compose -f infra/compose.yaml up -d (--detach: rodar em background)
+
+code jsconfig.json
