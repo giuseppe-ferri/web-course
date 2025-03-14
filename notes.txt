@@ -63,3 +63,7 @@ npm install pg@8.11.3
 docker compose -f infra/compose.yaml up -d (--detach: rodar em background)
 
 code jsconfig.json
+
+npm install node-pg-migrate@6.2.2
+
+npm install dotenv@16.4.4
